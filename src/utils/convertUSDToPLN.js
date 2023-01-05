@@ -5,5 +5,9 @@ export const convertUSDToPLN = (USD) => {
     currency: 'PLN'
   });
 
+  if(USD < 0){
+    return 'Wrong value...';
+  }
+
   return formatter.format(USDtoPLN).replace(/\u00a0/g, ' ');
 }

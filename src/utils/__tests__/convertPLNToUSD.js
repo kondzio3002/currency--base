@@ -26,9 +26,9 @@ describe('ConvertPLNtoUSD', () => {
   });
 
   it('should return $0.00 when input is lower than zero', () => {
-    expect(convertPLNToUSD(-1)).toBe('$0.00');
-    expect(convertPLNToUSD(-3)).toBe('$0.00');
-    expect(convertPLNToUSD(-31)).toBe('$0.00');
-    expect(convertPLNToUSD(-231)).toBe('$0.00');
+    expect(convertPLNToUSD(-1)).toBe('Wrong value...');
+    expect(convertPLNToUSD(-3)).toBe('Wrong value...');
+    expect(convertPLNToUSD(-31)).toBe('Wrong value...');
+    expect(convertPLNToUSD(-231)).toBe('Wrong value...');
   });
 });
